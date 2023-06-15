@@ -26,7 +26,7 @@ ReactDOM.createRoot(document.getElementById("app")!).render(
             }
           >
             <Route path=":id" element={<ExercisePage />} />
-            <Route path="*" element={<Navigate to="./0" />} />
+            <Route path="*" element={<Navigate to="./1" />} />
           </Route>
         </Route>
       </Routes>

@@ -2,29 +2,39 @@
 Source: https://www.joshwcomeau.com/css/custom-css-reset/
 */
 *, *::before, *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 * {
-  margin: 0;
+    margin: 0;
 }
 
 body {
-  line-height: calc(1em + 0.5rem);
+    line-height: calc(1em + 0.5rem);
 }
 
 img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 input, button, textarea, select {
-  font: inherit;
+    font: inherit;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 #app {
-  isolation: isolate;
+    isolation: isolate;
+}
+
+:root {
+    --tile-background: #f8f8f8;
+    --shadow: 0 0px 1px rgb(0 0 0 / 20%),
+    0 1px 2px rgb(0 0 0 / 10%),
+    0 2px 4px rgb(0 0 0 / 10%),
+    0 4px 8px rgb(0 0 0 / 10%),
+    0 8px 16px rgb(0 0 0 / 10%);
 }
