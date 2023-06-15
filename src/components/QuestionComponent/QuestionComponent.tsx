@@ -1,4 +1,4 @@
-import {FunctionComponent, useCallback, useMemo, useState} from "react";
+import { FunctionComponent, useCallback, useMemo, useState } from "react";
 import { Question } from "@models/question.model";
 import s from "./QuestionComponent.module.scss";
 import { Choice } from "@models/choice.model";
@@ -13,7 +13,7 @@ export const QuestionComponent: FunctionComponent<QuestionComponentProps> = (
   props
 ) => {
   const [choice, setChoice] = useState<Choice | undefined>(undefined);
-  const isAnswered = useMemo(() => choice !== undefined, [choice])
+  const isAnswered = useMemo(() => choice !== undefined, [choice]);
   const handleClick = useCallback(
     (item: Choice) => () => {
       if (!isAnswered) {
@@ -47,6 +47,7 @@ export const QuestionComponent: FunctionComponent<QuestionComponentProps> = (
       <div className={s.buttons}>
         {props.gotoPreviousQuestion !== null ? (
           <button
+            className="link"
             style={{ gridArea: "left" }}
             type="button"
             onClick={props.gotoPreviousQuestion}
@@ -56,6 +57,7 @@ export const QuestionComponent: FunctionComponent<QuestionComponentProps> = (
         ) : null}
         {props.gotoNextQuestion !== null ? (
           <button
+            className="link"
             style={{ gridArea: "right" }}
             type="button"
             onClick={props.gotoNextQuestion}

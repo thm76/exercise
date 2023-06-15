@@ -4,6 +4,7 @@ import { App } from "./components/App/App";
 import { HashRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
 import { ExercisePage } from "@components/ExercisePage/ExercisePage";
 import { ExerciseProvider } from "@providers/ExerciseProvider";
+import "./base.scss"
 
 ReactDOM.createRoot(document.getElementById("app")!).render(
   <React.StrictMode>
