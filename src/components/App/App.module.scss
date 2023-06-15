@@ -1,0 +1,14 @@
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  header {
+    padding: 1rem 2rem;
+    background: black;
+    color: white;
+  }
+
+  main {
+    padding: 1rem 2rem;
+  }
+}
