@@ -28,14 +28,5 @@
     justify-content: space-between;
 
     margin-top: 2rem;
-
-    button {
-      padding: 0.5rem 1rem;
-
-      &:disabled {
-        color: #aaa;
-        cursor: not-allowed;
-      }
-    }
   }
 }

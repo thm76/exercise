@@ -53,6 +53,12 @@ button {
     border: none;
     border-radius: 3px;
 
+
+
+    &:not(.link) {
+        padding: 0.5rem 1rem;
+    }
+
     &.link {
         background: none;
         text-decoration: underline;
@@ -60,5 +66,10 @@ button {
 
     &:hover {
 cursor: pointer;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        color: #666;
     }
 }
