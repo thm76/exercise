@@ -1,4 +1,4 @@
-import {FunctionComponent, ReactNode, useContext} from "react";
+import { FunctionComponent, ReactNode, useContext } from "react";
 import { ExerciseContext } from "@providers/ExerciseContext";
 import { useParams } from "react-router-dom";
 import { useResource } from "@helpers/use-resource";
@@ -12,7 +12,9 @@ type ExerciseProviderProps = {
 export const ExerciseProvider: FunctionComponent<ExerciseProviderProps> = (
   props
 ) => {
-  const params = useParams<{ name: string }>();
+  const params = useParams<{
+    name: string;
+  }>();
 
   const [exercise] = useResource<Exercise>(`/api/exercises/${params.name}`);
 
@@ -26,11 +28,11 @@ export const ExerciseProvider: FunctionComponent<ExerciseProviderProps> = (
 };
 
 export const useExercise = (): Exercise => {
-    const context = useContext(ExerciseContext)
+  const context = useContext(ExerciseContext);
 
-    if (context === undefined) {
-        throw new Error("No context!")
-    }
+  if (context === undefined) {
+    throw new Error("No context!");
+  }
 
-    return context;
-}
+  return context;
+};

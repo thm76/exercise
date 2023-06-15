@@ -10,7 +10,7 @@ export const useResource = <Type>(
   const refresh = useCallback(() => {
     fetch(input, init)
       .then((response) => {
-        console.log("Status:", response.status, response.statusText)
+        console.log("Status:", response.status, response.statusText);
         if (response.ok) {
           return response.text();
         }
@@ -19,13 +19,24 @@ export const useResource = <Type>(
       .then((body) => {
         try {
           const data = JSON.parse(body) as Type;
-          setResource({ loading: false, error: undefined, data });
+          setResource({
+            loading: false,
+            error: undefined,
+            data,
+          });
         } catch {
-          setResource({ loading: false, data: body as Type });
+          setResource({
+            loading: false,
+            data: body as Type,
+          });
         }
       })
       .catch((error) => {
-        setResource({ loading: false, data: undefined, error });
+        setResource({
+          loading: false,
+          data: undefined,
+          error,
+        });
       });
   }, [input, init]);
 

@@ -27,11 +27,16 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
+p {
+    margin: 0.5rem 0;
+}
+
 #app {
     isolation: isolate;
 }
 
 :root {
+    --content-width: min(100vw, 1200px);
     --tile-border-radius: 5px;
     --tile-background: #f8f8f8;
     --shadow: 0 0px 1px rgb(0 0 0 / 20%),

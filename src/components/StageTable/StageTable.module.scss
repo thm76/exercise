@@ -1,0 +1,6 @@
+.host {
+  display: grid;
+  grid-template-areas: "subtitle subtitle" "left right";
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+}

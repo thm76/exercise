@@ -1,0 +1,51 @@
+.host {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-areas: "question nil" "choices answer" "source answer" "buttons buttons";
+  grid-template-columns: 3fr 2fr;
+  gap: 1rem 2rem;
+
+  .question {
+    grid-area: question;
+  }
+
+  .choices {
+    grid-area: choices;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+
+    button {
+      background: #ccc;
+      border: none;
+      padding: 1rem;
+      text-transform: uppercase;
+
+      &:hover {
+        background: #ddd;
+      }
+
+      &.chosen {
+        background: blue;
+        color: white;
+      }
+    }
+  }
+
+  .source {
+    grid-area: source;
+    color: #888;
+  }
+
+  .answer {
+    grid-area: answer;
+  }
+
+  .buttons {
+    grid-area: buttons;
+    display: grid;
+    grid-template-areas: "left right";
+    //grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+}

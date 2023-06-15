@@ -1,6 +1,7 @@
 .host {
   background: var(--tile-background);
-  margin: 0;
+  width: var(--content-width);
+  margin: 0 auto;
   border-radius: var(--tile-border-radius);
   box-shadow: var(--shadow);
   overflow: hidden;
@@ -32,6 +33,8 @@
       place-content: center;
       color: inherit;
       text-decoration: none;
+      position: relative;
+      z-index: 2;
     }
 
     span {
@@ -47,6 +50,7 @@
 
     &.current {
       background: var(--current-color);
+
       &::after {
         background: var(--current-color);
 
@@ -55,6 +59,7 @@
 
     &.completed {
       background: var(--completed-color);
+
       &::after {
         background: var(--completed-color);
       }

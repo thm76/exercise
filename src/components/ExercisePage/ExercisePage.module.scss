@@ -1,5 +1,6 @@
 .host {
-  margin: 1rem 0;
+  margin: 1rem auto;
+  width: var(--content-width);
 
   .title {
     margin: 1rem 0;
@@ -19,8 +20,22 @@
     border-radius: var(--tile-border-radius);
     box-shadow: var(--shadow);
 
-    min-height: 120vh;
-    position: relative;
-    z-index: -1;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-areas: "previous next";
+    justify-content: space-between;
+
+    margin-top: 2rem;
+
+    button {
+      padding: 0.5rem 1rem;
+
+      &:disabled {
+        color: #aaa;
+        cursor: not-allowed;
+      }
+    }
   }
 }

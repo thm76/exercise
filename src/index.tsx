@@ -1,15 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { App } from "./components/App/App";
-import {
-  BrowserRouter,
-  HashRouter,
-  Navigate,
-  NavLink,
-  Outlet,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { HashRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
 import { ExercisePage } from "@components/ExercisePage/ExercisePage";
 import { ExerciseProvider } from "@providers/ExerciseProvider";
 

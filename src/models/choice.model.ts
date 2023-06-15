@@ -1,4 +1,4 @@
 export type Choice = {
-    text: string;
-    correct: boolean;
-}
+  text: string;
+  correct: boolean;
+};
