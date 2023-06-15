@@ -9,7 +9,6 @@ export const App: FunctionComponent = (props) => {
   return <div className={s.app}>
     <header><h1>Demo</h1></header>
     <main>
-      <NavLink to="exercise/using-passwords">Using Passwords</NavLink>
       <Outlet/></main>
   </div>;
 };

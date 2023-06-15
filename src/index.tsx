@@ -5,6 +5,7 @@ import {
   BrowserRouter,
   HashRouter,
   Navigate,
+  NavLink,
   Outlet,
   Route,
   Routes,
@@ -28,6 +29,10 @@ ReactDOM.createRoot(document.getElementById("app")!).render(
             <Route path=":id" element={<ExercisePage />} />
             <Route path="*" element={<Navigate to="./1" />} />
           </Route>
+          <Route
+            path="*"
+            element={<Navigate to="exercise/using-passwords" />}
+          />
         </Route>
       </Routes>
     </HashRouter>

@@ -11,6 +11,7 @@ Source: https://www.joshwcomeau.com/css/custom-css-reset/
 
 body {
     line-height: calc(1em + 0.5rem);
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;;
 }
 
 img, picture, video, canvas, svg {
@@ -31,6 +32,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 :root {
+    --tile-border-radius: 5px;
     --tile-background: #f8f8f8;
     --shadow: 0 0px 1px rgb(0 0 0 / 20%),
     0 1px 2px rgb(0 0 0 / 10%),

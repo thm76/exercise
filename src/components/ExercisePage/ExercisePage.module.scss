@@ -1,0 +1,26 @@
+.host {
+  margin: 1rem 0;
+
+  .title {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--tile-background);
+    border-radius: var(--tile-border-radius);
+    box-shadow: var(--shadow);
+
+    position: sticky;
+    top: calc(5rem + 1em + 3rem);
+  }
+
+  .tile {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--tile-background);
+    border-radius: var(--tile-border-radius);
+    box-shadow: var(--shadow);
+
+    min-height: 120vh;
+    position: relative;
+    z-index: -1;
+  }
+}

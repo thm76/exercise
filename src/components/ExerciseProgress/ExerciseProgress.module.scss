@@ -1,12 +1,15 @@
 .host {
   background: var(--tile-background);
-  margin: 1rem 0;
-  border-radius: 5px;
+  margin: 0;
+  border-radius: var(--tile-border-radius);
   box-shadow: var(--shadow);
   overflow: hidden;
 
+  position: sticky;
+  top: 4rem;
+
   --completed-color: lch(76% 50 132);
-  --current-color: lch(76% 50 224);
+  --current-color: lch(60% 50 224);
   --future-color: #e8e8e8;
 
   ul {
